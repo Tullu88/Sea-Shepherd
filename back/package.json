@@ -1,0 +1,33 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node app.js",
+    "front": "cd../front/shepherd && npm start",
+    "dev": "concurrently -n 'server,client' -c 'green,white' \"nodemon app.js\" \"npm run front\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.4.0",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^1.4.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "handlebars": "^4.7.7",
+    "mocha": "^9.1.3",
+    "mongoose": "^6.0.13",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "passport": "^0.5.0",
+    "passport-oauth": "^1.0.0",
+    "passport-twitch": "^1.0.3",
+    "passport-twitch-new": "0.0.2",
+    "request": "^2.88.2"
+  }
+}
