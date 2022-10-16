@@ -69,7 +69,7 @@ router.route('/getItemsPriceList/:town').post((req, res) => {
     //Item.find({_name: req.body})
     let variable = [];
     let names = [];
-   req.body.map(e => console.log(e._name))
+   //req.body.map(e => console.log(e._name))
    req.body.map(e => names.push(e._name));
     req.body.map(e => variable.push(e));
 
@@ -90,7 +90,7 @@ router.route('/getItemsPriceList/:town').post((req, res) => {
         }
     })
     .then(e => {
-        console.log('this is e: ' + e)
+        //console.log('this is e: ' + e)
         res.send({baseItemDetails: e, playerItemDetails: variable})
     })
     .catch(err => res.status(500).json('Fetching item detail failure: ' + err))

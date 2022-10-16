@@ -14,13 +14,13 @@ router.route('/player/:p1Id').get((req, res) =>{
             const playerLocation = player.ship.location;
             Town.findOne({ _name: playerLocation })
             .then(town => {
-                console.log("The town is: " + util.inspect(town, {depth: null}))
+                //console.log("The town is: " + util.inspect(town, {depth: null}))
                 res.send(town)
                 
             })
             .catch(err => res.status(400).json('No such town exists: ' + err))
         })
-        .catch(err => res.status(400).json('No such town exists: ' + err))
+        .catch(err => res.status(400).json('No such player exists: ' + err))
     }
     
     getTownWherePlayerIsDocked();

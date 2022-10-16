@@ -124,11 +124,11 @@ router.get('/api/newSailorTest', (req, res) => {
 
 router.get('/api/player/:p1Id', (req, res) => {
     //use the model to make queries
-    console.log('Body: ', req.body);
+    //console.log('Body: ', req.body);
 
     Player.findOne({"id": req.params.p1Id})
         .then(player => {
-            Ships.findOne({"name": player.ship.name})
+            Ships.findOne({"type": player.ship.type})
                 .then(ship => {
                     res.send({player, ship})
                 })
@@ -141,11 +141,11 @@ router.get('/api/player/:p1Id', (req, res) => {
 
 router.get('/api/location/:p1Id', (req, res) => {
     //use the model to make queries
-    console.log('Body: ', req.body);
+    //console.log('Body: ', req.body);
 
     Player.findOne({"id": req.params.p1Id})
         .then(player => {
-            Ships.findOne({"name": player.ship.name})
+            Ships.findOne({"type": player.ship.type})
                 .then(ship => {
                     res.send({player, ship})
                 })
@@ -156,6 +156,24 @@ router.get('/api/location/:p1Id', (req, res) => {
 });
 
 router.post('/api/sailTo/:p1Id', (req, res) => {
+    //const battleConfirmed = false;
+    const sailingState = req.body.sailingCounterState;
+    console.log(sailingState)
+    
+    const pveBattleChance = setInterval(() => {
+        const chance = Math.floor((Math.random() * 99) + 1);
+        if (chance > 80) {
+            clearInterval(pveBattleChance);
+            //battleConfirmed = true;
+            console.log('Player sailing endpoint')
+            res.send({battleConfirmed: true})
+        }
+    }, 1000)
+
+    
+})
+
+router.post('/api/sailTo/break/p1Id', (req, res) => {
     //res.send('Sailing to location: ' + req.body.location);
     Player.findOne({"id": req.params.p1Id})
     .then(player => {

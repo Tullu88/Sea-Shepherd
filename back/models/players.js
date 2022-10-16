@@ -7,6 +7,7 @@ const PlayerSchema = new Schema({
     name: String,
     ship: {
         name: String,
+        model: String,
         status: String,
         location: String,
         storage: {
