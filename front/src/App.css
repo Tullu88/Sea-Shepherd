@@ -1,0 +1,250 @@
+.App {
+  background-color: #282c34;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  height: 100vh;
+}
+
+.App-header {
+  background-color: #282c34;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Nav {
+  justify-content: space-around;
+  display:flex;
+  min-height: 10vh;
+  font-size: calc(3px + 2vmin);
+  color: white;
+}
+
+.main {
+  background-color: #282c34;
+}
+
+.link {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.linkComp {
+  text-decoration: none;
+}
+
+.main-window {
+  display: flex;
+  height: 70vh;
+  max-height: 70vh;
+  min-width: 77.5%;
+  width: 70%;
+  align-content:flex-end;
+  margin-right: 15%;
+  outline: white;
+  outline-style: solid;
+  outline-width: 1px;
+  text-align: left;
+  text-indent: 1%;
+  font-size: calc(1px + 2vmin);
+}
+
+.Play {
+  justify-content: center;
+  color:aliceblue;
+  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
+}
+
+.psShotsScreens {
+  font-size: calc(.01px + 2vmin);
+  min-width: 100%;
+  background-color: rgba(0, 0, 255, 0.397) ;
+}
+
+.p1-shots-screen {
+  max-width: 200px;
+  height: 500px;
+  background-color: rgba(222, 184, 135, 0.582);
+}
+
+.p2-shots-screen {
+  max-width: 200px;
+  height: 500px;
+  background-color: rgba(95, 158, 160, 0.418);
+}
+
+
+
+.gameNav {
+  display: flex;
+  justify-content: end;
+}
+
+.gameNavContent {
+  align-content: unset;
+  justify-content: right;
+  float:right;
+}
+
+.gameNavContent button{
+  display: block;
+  min-width: 70px;
+  font-size: 13px;
+  padding: 10px;
+  font-weight: bolder;
+
+}
+
+.playerInfo {
+  display: flex;
+  justify-content: start;
+  max-width: 100%;
+  background-color: rgba(128, 255, 0, 0.384);
+  outline: darkblue solid 1px;
+}
+
+.playerInfo div {
+  min-width: 30%;
+  padding-bottom: 5%;
+}
+
+.player-tab {
+  display:flex;
+  justify-content:start;
+  background-color: lightblue;
+  min-height: 30px;
+}
+
+.thePlayerItems {
+  
+}
+
+
+
+
+.individualItems {
+  display: flex;
+}
+
+.thePlayerItems div {
+  display: block;
+}
+
+.townValue {
+  color: black;
+  min-width: 300px;
+  width: 100px;
+}
+
+.playerFunds {
+  display: flex;
+  width: 100px;
+  color: black;
+  margin-right: 150px;
+  margin-left: 30px;
+}
+
+.details {
+  background-color: brown;
+  width: 800px;
+}
+
+.market-window {
+  background-color: blue;
+  display: flex;
+  flex-basis: 100%;
+  max-width: 1295px;
+  min-width: 1000px;
+  max-height: 60vh;
+}
+
+.left-side {
+  background-color: rgba(127, 255, 212, 0.658);
+  flex-basis: 50%;
+  overflow: scroll;
+}
+
+.right-side {
+  margin-left: 20px;
+  background-color: rgba(137, 43, 226, 0.438);
+  flex-basis: 50%;
+  overflow: scroll;
+}
+
+.hireSailors {
+  display: flex;
+  justify-content: start;
+  align-content: space-between;
+}
+
+.hireSailors div {
+  min-width: 10%;
+  width: 500px;
+  max-width: 120%;
+}
+
+.hireSailors input[type='number']{
+  width: 20%;
+  -moz-appearance: textfield;
+}
+
+.available-Sailors{
+
+}
+
+.hireSailors input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.locations {
+  display: flex;
+}
+
+.location:hover {
+  color:yellow;
+}
+
+.Boarding {
+  float: right;
+  width: 50%;
+}
+
+.status {
+  padding-top: 21.5%;
+  display: flex;
+  align-content: space-between;
+}
+
+.status-1  {
+  padding-top:0%;
+  margin:2%;
+  display: flex;
+}
+
+.status-2 {
+  margin:2%;
+  padding-top: 23%;
+}
+
+.status-3 {
+  margin:2%;
+  padding-top: 24%;
+}
+
+.battleWindow {
+  display: flex;
+}
+
+.start-end{
+  display: flexbox;
+}
+
+.login { 
+  color:aliceblue;
+}

@@ -1,0 +1,27 @@
+.item {
+    max-width: 500px;
+}
+
+.itemTab {
+    display:flex;
+    justify-content: flex-end;
+    outline: 1px solid black;
+    gap: 200px;
+}
+
+.itemPrice {
+    -ms-flex-align: center;
+    background-color: blue;
+}
+
+.coin {
+    /* background-color: gold; */
+    background-image: url('../Images/Coin.png');
+    background-repeat:  no-repeat;
+    background-size: 100% 100%;
+    margin-top: 10px ;
+    margin-left: 5px;
+    width: 10px;
+    height: 10px;
+    flex-basis: 11%;
+} 

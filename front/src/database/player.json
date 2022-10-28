@@ -1,0 +1,47 @@
+{
+    "player1" : {
+        "fleet" : {
+            "ship 1" : {
+                "name" : "tartane",
+                "crew" : 22,
+                "guns" : {
+                    "gun_1" : {
+                        "type" : "6 pounder iron"
+                    },
+                    "gun_2" : {
+                        "type" : "6 pounder iron"
+                    },
+                    "gun_3" : {
+                        "type" : "6 pounder iron"
+                    },
+                    "gun_4" : {
+                        "type" : "6 pounder iron"
+                    }
+                }
+            } 
+        }
+    },
+
+    "player2" : {
+        "fleet" : {
+            "ship 1" : {
+                "name" : "tartane",
+                "crew" : 10,
+                "guns" : {
+                    "gun_1" : {
+                        "type" : "6 pounder iron"
+                    },
+                    "gun_2" : {
+                        "type" : "6 pounder iron"
+                    },
+                    "gun_3" : {
+                        "type" : "6 pounder iron"
+                    },
+                    "gun_4" : {
+                        "type" : "6 pounder iron"
+                    }
+                }
+            } 
+        }
+    }
+}

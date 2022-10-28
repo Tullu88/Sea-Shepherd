@@ -1,0 +1,11 @@
+{
+    "tartane" : {
+        "characteristics" : {
+            "_gun ports" : 4,
+            "_min manpower" : 7,
+            "_max manpower" : 22,
+            "_masts" : 1,
+            "_sails" : 2
+        }
+    }
+}

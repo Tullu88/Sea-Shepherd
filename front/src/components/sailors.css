@@ -1,0 +1,8 @@
+.sailorCard {
+    margin: 15px;
+    outline: white;
+    outline-style: solid;
+    outline-width: 1px;
+    width: 250px;
+    height: 350px;
+}
